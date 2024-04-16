@@ -389,7 +389,8 @@ section.portfolio .flex{
     background-color: rgba(0, 0, 0, 0.727);
     margin: 0px;   
     margin-top: 102%;
-    height: 30%;
+    height: 21%;
+    border-radius: 0 0 40px 40px;
 }
 
 /* Footer */
