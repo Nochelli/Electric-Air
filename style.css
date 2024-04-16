@@ -187,31 +187,48 @@ main a:hover{
 }
 
 /*link do whatsapp CSS */
-.whatsapp-link {
+.btn-social-fix-insta button{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; 
+    background-color: transparent;
+    font-size: 45px;
+    border: 0;
+    cursor: pointer;
+    color:  rgb(249, 241, 11);
+
     }
-    .whatsapp-icon {
-    width: 70px; 
-    height: 70px; 
-    background-color: transparent;  
-    }
+
+    .btn-social-fix-insta button:hover{
+        transform: scale(1.10);
+        display: inline-block;
+        transition: .5s;
+        
     
-    /*link do whatsapp CSS */
-    /*link do instagram CSS */
-    .instagram-link {
+    }
+       
+
+.btn-social-fix-what button{
     position: fixed;
     bottom: 90px;
     right: 20px;
-    z-index: 1000; 
-    }
-    .instagram-icon {
-    width: 70px; 
-    height: 70px; 
-    }
-    /*link do instagram CSS */
+    background-color: transparent;
+    font-size: 45px;
+    border: 0;
+    cursor: pointer;
+    color: rgb(249, 241, 11);
+     
+        }
+
+        .btn-social-fix-what button:hover{
+            transform: scale(1.10);
+            display: inline-block;
+            transition: .5s;
+            
+        
+        }
+           
+    
     
 
     /*estilos das especialidades */
