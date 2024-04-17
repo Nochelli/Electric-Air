@@ -585,7 +585,7 @@ header {
 
 .menu-mobile.abrir{
     visibility: visible;
-    height: calc(50vh - 77px);
+    height: calc(48vh - 77px);
     
     }
 
@@ -619,6 +619,7 @@ header a:hover {
         border: none;
         box-shadow: 0px 0px 50px rgb(14, 170, 255);
         margin-bottom: 80px;
+        margin-top: -50px;
 
 
     }
