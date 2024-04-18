@@ -21,6 +21,7 @@ body {
 
 }
 
+
 a {
     text-decoration: none;
 }
@@ -33,7 +34,7 @@ a {
 /*header*/
 
 .logo {
-    width: 100px;
+    width: 220px;
 }
 
 header {
@@ -83,6 +84,8 @@ header .btn-contato button {
     border-radius: 30px;
     cursor: pointer;
     color: rgb(249, 241, 11);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
 
 }
 
@@ -152,6 +155,14 @@ main .btn-contato button {
     border-radius: 30px;
     cursor: pointer;
     color: rgb(249, 241, 11);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+
+
+}
+
+.bi-envelope, .bi-whatsapp, .bi-instagram{
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 
 
 }
@@ -195,6 +206,8 @@ main a:hover {
     border: 0;
     cursor: pointer;
     color: rgb(249, 241, 11);
+    z-index: 5;
+
 
 }
 
@@ -216,6 +229,8 @@ main a:hover {
     border: 0;
     cursor: pointer;
     color: rgb(249, 241, 11);
+    z-index: 5;
+
 
 }
 
@@ -252,9 +267,7 @@ section.especialidades .flex {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 600px;
-
-
+    width: 360px;
 }
 
 .especialidades .especialidades-box:hover {
@@ -321,6 +334,11 @@ section.especialidades .flex {
 
 /* hidden and show*/
 
+.container{
+    display: flex;
+    gap: 40px;
+
+}
 
 
 /* Portfolio */
@@ -336,23 +354,10 @@ section.portfolio .flex {
     margin-top: 60px;
 }
 
-.img-port {
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    border-radius: 40px;
-    position: relative;
-    border-style: 250px red;
 
 
 
 
-}
-
-
-.img-port:hover {
-    box-shadow: 0 0 20px 4px rgba(14, 171, 255, 0.492);
-}
 
 
 .overlay {
@@ -408,7 +413,7 @@ section.portfolio .flex {
     background-color: rgba(0, 0, 0, 0.727);
     margin: 0px;
     margin-top: 103%;
-    height: 21%;
+    height: 20%;
     border-radius: 0 0 40px 40px;
 }
 
@@ -473,8 +478,8 @@ footer p {
 
 
 .btn-menu button{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     outline: none;
     border: 4px solid #ffffff;
     border-radius: 10px;
@@ -496,7 +501,7 @@ footer p {
 
 .btn-menu button.ativar .linha:nth-child(1)     {
 
-    transform: translateY(11px) rotate(-45deg);
+    transform: translateY(8px) rotate(-45deg);
     background-color: red;
 
 
@@ -504,7 +509,7 @@ footer p {
 
 .btn-menu button.ativar .linha:nth-child(3)     {
 
-    transform: translateY(-11px) rotate(45deg);
+    transform: translateY(-8px) rotate(45deg);
     background-color: red;
 
 
@@ -520,11 +525,11 @@ footer p {
 
 
 .linha{
-    width: 28px;
+    width: 22px;
     height: 3px;
     background-color:  rgb(14, 170, 255);
     display: block;
-    margin: 8px auto;
+    margin: 5px auto;
     position: relative;
     transform-origin: center;
     transition: 0.2s;
@@ -693,7 +698,7 @@ header a:hover {
 
     }
 
-.img-port{
+.item{
     width: 240px;
     height: 310px;
     margin-bottom: 20px;
@@ -703,6 +708,7 @@ header a:hover {
     font-size: 9px;
 
 }
+
 
 .overlay p {
     padding: 10px 40px;
@@ -727,20 +733,129 @@ footer .logo{
 
 }
 
+.logo{
+    width: 120px;
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    padding: 15px;
+    max-width: 6450px;
+    margin: 0 auto;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 40px;
+    line-height: 250px;
+    width: 40px;
+    color: #ffffff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 40px;
+    border: 5px solid rgb(14, 170, 255);
+    box-shadow: 0 0 20px 4px rgba(14, 171, 255, 0.499);
+  }
+
+  .item:hover {
+    box-shadow: 0 0 20px 4px rgb(14, 170, 255);
+}
+  
+  .current-item {
+    opacity: 1;
+  }
+  
+  /* This is from w3schools */
+  /* 
+  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+
+  
