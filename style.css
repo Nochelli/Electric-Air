@@ -255,7 +255,6 @@ section.especialidades .flex {
     width: 600px;
 
 
-
 }
 
 .especialidades .especialidades-box:hover {
@@ -343,6 +342,8 @@ section.portfolio .flex {
     background-size: cover;
     border-radius: 40px;
     position: relative;
+    border-style: 250px red;
+
 
 
 
@@ -370,6 +371,7 @@ section.portfolio .flex {
     color: white;
     opacity: 0;
     transition: .5s;
+    
 }
 
 .overlay p {
@@ -405,7 +407,7 @@ section.portfolio .flex {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.727);
     margin: 0px;
-    margin-top: 102%;
+    margin-top: 103%;
     height: 21%;
     border-radius: 0 0 40px 40px;
 }
@@ -471,10 +473,10 @@ footer p {
 
 
 .btn-menu button{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     outline: none;
-    border: 2px solid #ffffff;
+    border: 4px solid #ffffff;
     border-radius: 10px;
     background: transparent;
     cursor: pointer;
@@ -487,7 +489,6 @@ footer p {
 
 .btn-menu button.ativar{
     border: 4px solid red;
-    box-shadow: 0px 0px 50px red;
 
 
 
@@ -497,7 +498,6 @@ footer p {
 
     transform: translateY(11px) rotate(-45deg);
     background-color: red;
-    box-shadow: 0px 0px 50px red;
 
 
 }
@@ -506,7 +506,6 @@ footer p {
 
     transform: translateY(-11px) rotate(45deg);
     background-color: red;
-    box-shadow: 0px 0px 50px red;
 
 
 }
@@ -523,30 +522,31 @@ footer p {
 .linha{
     width: 28px;
     height: 3px;
-    background-color: #ccc;
+    background-color:  rgb(14, 170, 255);
     display: block;
     margin: 8px auto;
     position: relative;
     transform-origin: center;
     transition: 0.2s;
-
+    
 }
 
 
 
 .menu-mobile{
-    background-color: rgba(47, 45, 45, 0.395);
+    background-color: rgba(24, 23, 23, 0.559);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     position: absolute;  
-    top: 77px;
+    top: 70px;
     left: 0;
     width: 60%;
-    height: 0vh;
+    height: 05vh;
     visibility: hidden;
     transition: 0.5s;
     overflow: hidden;
     z-index: 5;
+
 
 }
 
@@ -556,14 +556,15 @@ footer p {
     display: block;
     padding: 15px 20px;
     font-size: 13pt;
+    
 
 
 }
 
 .menu-mobile nav a:hover{
-    background-color: rgba(0, 0, 0, 0.688);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
-
+    box-shadow: 0px 0px 10px rgb(14, 170, 255);
 }
 
 
@@ -585,7 +586,7 @@ header {
 
 .menu-mobile.abrir{
     visibility: visible;
-    height: calc(48vh - 77px);
+    height: calc(48vh - 70px);
     
     }
 
@@ -696,7 +697,6 @@ header a:hover {
     width: 240px;
     height: 310px;
     margin-bottom: 20px;
-
 }
 
 .portfolio .text{
@@ -712,7 +712,7 @@ header a:hover {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    color: rgb(249, 241, 11);
+    color: rgb(249, 241, 11); 
 }
 
 
