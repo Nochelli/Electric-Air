@@ -886,12 +886,10 @@ footer .logo{
 
 .orçamento button {
 
-
     font-size: 14px;
     font-weight: 600;
-
-
-
+    justify-content: center;
+    margin-left: 40px;
 
 }
 
