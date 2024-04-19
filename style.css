@@ -615,9 +615,10 @@ main .btn-contato button:hover {
 
 
 
-    /* menu mobile*/
+    /* menu mobile fim*/
 
 
+    /* container slide*/
 
     .container {
         position: relative;
@@ -638,15 +639,17 @@ main .btn-contato button:hover {
         left: 0;
         right: auto;
         bottom: 0;
-        font-size: 40px;
+        font-size: 50px;
         line-height: 250px;
         width: 40px;
         color: #ffffff;
         transition: all 600ms ease-in-out;
         background: linear-gradient(to left, transparent 0%, rgb(0, 0, 0) 200%);
-        opacity: 0.1;
+        opacity: 0.4;
         cursor: pointer;
         border: none;
+  
+
       }
       
       .arrow-left:hover,
@@ -655,10 +658,15 @@ main .btn-contato button:hover {
       }
       
       .arrow-right {
-        right: 0;
+        right: -4%;
         left: auto;
         text-align: right;
         background: linear-gradient(to right, transparent 0%, black 200%);
+      }
+
+      .arrow-left {
+        left: -4%;
+
       }
       
       .gallery {
@@ -669,7 +677,7 @@ main .btn-contato button:hover {
       
       .item {
         flex-shrink: 0;
-        transition: all 600ms ease-in-out;
+        transition: all 900ms ease-in-out;
         opacity: 0.5;
         width: 250px;
         height: 350px;
@@ -698,7 +706,8 @@ main .btn-contato button:hover {
         scrollbar-width: none; /* Firefox */
       }
       
-    
+/* container slide fim*/
+
 
 
 @media screen and (max-width: 1020px) {

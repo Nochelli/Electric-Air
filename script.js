@@ -71,5 +71,15 @@ controls.forEach((control) => {
     });
 
     items[currentItem].classList.add("current-item");
+    centralizarItemAtual() ; 
   });
 });
+
+function centralizarItemAtual() {
+  const galleryWrapper = document.querySelector(".gallery-wrapper");
+  const currentItem = document.querySelector(".current-item");
+  if (currentItem) { 
+    const scrollLeft = currentItem.offsetLeft - (galleryWrapper.offsetWidth - currentItem.offsetWidth) / 2;
+    galleryWrapper.scrollLeft = scrollLeft;
+  }
+}
