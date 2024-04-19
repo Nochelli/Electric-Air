@@ -484,7 +484,7 @@ footer p {
     cursor: pointer;
     color: rgb(249, 241, 11);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    margin-left: 40%;
+    
 
 }
 
@@ -886,18 +886,10 @@ footer .logo{
 .orçamento button {
 
 
-    margin-left: 19%;
-    margin-bottom: 70px;
-
-
-
-    padding: 10px 40px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 
-    background-color: rgb(14, 170, 255);
-    border: 0;
-    border-radius: 30px;
+
 
 
 }
