@@ -473,10 +473,16 @@ footer p {
     
 }
 
+.orçamento{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
 
 .orçamento button {
     padding: 10px 40px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     background-color: rgb(14, 170, 255);
     border: 0;
@@ -882,6 +888,11 @@ footer .logo{
 
 
 
+}
+
+.orçamento{
+
+    margin-top: 0px;
 }
 
 .orçamento button {
